@@ -289,9 +289,6 @@ The Erlangen CRM / OWL implementation of the CIDOC Conceptual Reference Model is
         <Class IRI="F62_Genre"/>
     </Declaration>
     <Declaration>
-        <Class IRI="F63_Library_Item_Type"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="F74_Corpus"/>
     </Declaration>
     <Declaration>
@@ -1351,9 +1348,6 @@ The Erlangen CRM / OWL implementation of the CIDOC Conceptual Reference Model is
         <NamedIndividual IRI="ValgamovaAA"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="avi"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="en"/>
     </Declaration>
     <Declaration>
@@ -1367,12 +1361,6 @@ The Erlangen CRM / OWL implementation of the CIDOC Conceptual Reference Model is
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="kh"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="mkv"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="mp4"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="pdf"/>
@@ -2301,10 +2289,6 @@ The Erlangen CRM / OWL implementation of the CIDOC Conceptual Reference Model is
         <Class IRI="E55_Type"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="F63_Library_Item_Type"/>
-        <Class IRI="F56_Digital_Format"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="F74_Corpus"/>
         <Class IRI="E73_Information_Object"/>
     </SubClassOf>
@@ -2437,10 +2421,6 @@ The Erlangen CRM / OWL implementation of the CIDOC Conceptual Reference Model is
         <NamedIndividual IRI="ValgamovaAA"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="F58_Video_Type"/>
-        <NamedIndividual IRI="avi"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="E56_Language"/>
         <NamedIndividual IRI="en"/>
     </ClassAssertion>
@@ -2461,23 +2441,7 @@ The Erlangen CRM / OWL implementation of the CIDOC Conceptual Reference Model is
         <NamedIndividual IRI="kh"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="F58_Video_Type"/>
-        <NamedIndividual IRI="mkv"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="F58_Video_Type"/>
-        <NamedIndividual IRI="mp4"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="F59_Notes_Type"/>
-        <NamedIndividual IRI="pdf"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="F61_Image_Type"/>
-        <NamedIndividual IRI="pdf"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="F63_Library_Item_Type"/>
         <NamedIndividual IRI="pdf"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2505,7 +2469,7 @@ The Erlangen CRM / OWL implementation of the CIDOC Conceptual Reference Model is
         <NamedIndividual IRI="txt"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="F57_Audio_Type"/>
+        <Class IRI="F58_Video_Type"/>
         <NamedIndividual IRI="wav"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
@@ -2611,7 +2575,7 @@ The Erlangen CRM / OWL implementation of the CIDOC Conceptual Reference Model is
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="P2_has_type"/>
         <NamedIndividual IRI="Laehoo_Performance_Video_Carrier"/>
-        <NamedIndividual IRI="mp4"/>
+        <NamedIndividual IRI="wav"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="P14_carried_out_by"/>
@@ -8956,56 +8920,6 @@ E9(x) ⊃ E7(x)</Literal>
         <Literal>E9</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F57_Audio_Type</IRI>
-        <Literal xml:lang="en">Audio</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F57_Audio_Type</IRI>
-        <Literal xml:lang="ru">Аудио</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F58_Video_Type</IRI>
-        <Literal xml:lang="en">Video</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F58_Video_Type</IRI>
-        <Literal xml:lang="ru">Видео</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F59_Notes_Type</IRI>
-        <Literal xml:lang="en">Notes</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F59_Notes_Type</IRI>
-        <Literal xml:lang="ru">Нотировка</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F60_Text_Type</IRI>
-        <Literal xml:lang="en">Text</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F60_Text_Type</IRI>
-        <Literal xml:lang="ru">Текст</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F61_Image_Type</IRI>
-        <Literal xml:lang="en">Image</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F61_Image_Type</IRI>
-        <Literal xml:lang="ru">Изображение</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>F62_Genre</IRI>
         <Literal xml:lang="ru">Жанр документа, произведения или другого подобного объекта. Используется для описания иерархического множества жанров.</Literal>
@@ -9019,16 +8933,6 @@ E9(x) ⊃ E7(x)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>F62_Genre</IRI>
         <Literal xml:lang="ru">F62 Жанр</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F63_Library_Item_Type</IRI>
-        <Literal xml:lang="en">Publication</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>F63_Library_Item_Type</IRI>
-        <Literal xml:lang="ru">Публикация</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14626,11 +14530,6 @@ P9(x,y) ⊃ P10(y,x)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>avi</IRI>
-        <Literal>avi</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>en</IRI>
         <Literal xml:lang="en">english</Literal>
     </AnnotationAssertion>
@@ -14683,16 +14582,6 @@ P9(x,y) ⊃ P10(y,x)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>midName</IRI>
         <Literal xml:lang="ru">Отчество</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>mkv</IRI>
-        <Literal>mkv</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>mp4</IRI>
-        <Literal>mp4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
